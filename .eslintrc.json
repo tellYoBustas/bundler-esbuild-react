@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:promise/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "tsconfigRootDir": ".",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "promise",
+    "sonarjs",
+    "prettier",
+    "optimize-regex",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
